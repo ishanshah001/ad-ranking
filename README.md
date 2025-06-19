@@ -1,4 +1,4 @@
-# 🧠 Project: Pinterest-Style Ad Ranking System
+# 🧠 Project: Ad Ranking System
 
 ### 🎯 Goal  
 Recommend the most relevant ads to users based on their personal and browsing data — inspired by Pinterest’s multi-stage ranking architecture.
