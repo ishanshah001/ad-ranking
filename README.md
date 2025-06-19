@@ -122,3 +122,48 @@ We built an optional **interactive web app** using Streamlit:
 These are loaded into the Streamlit app for real-time inference.
 
 ---
+## 🛠️ Step-by-Step Guide to Run the Project
+
+---
+
+### ✅ 1. Clone the Repository
+
+```
+git clone https://github.com/your-username/ad-ranking-system.git
+cd ad-ranking-system
+```
+
+### ✅ 2. Download the Dataset
+Download the dataset from Kaggle:
+swekerr/click-through-rate-prediction
+
+### ✅ 3. Run the Jupyter Notebook (Model Training)
+
+You can use Jupyter or Google Colab.
+
+Open the notebook:
+notebooks/train_twin_tower_model.ipynb
+
+Execute each cell step-by-step:
+
+- `Preprocessing (label encoding, scaling)`
+- `Generating positive & negative samples`
+- `Model training`
+- `AUC evaluation`
+- `Save model and encoders`
+
+Outputs:
+
+- `twin_tower_model.pth` → Trained PyTorch model  
+- `le_ad.pkl` → LabelEncoder for ad topic lines  
+- `le_gender.pkl` → LabelEncoder for gender  
+- `scaler.pkl` → MinMaxScaler for numeric features
+
+### ✅ 4. Run the Streamlit App (Optional UI)
+Use the trained model in an interactive web app.
+```
+streamlit run streamlit_app.py
+```
+
+### ✅ 5.  Re-Train or Extend
+Replace random ad sampling with semantic retrieval (e.g., Faiss)
