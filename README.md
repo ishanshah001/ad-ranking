@@ -24,6 +24,7 @@ We used a synthetic advertising dataset with the following columns:
 - `Clicked on Ad`  
 → *Label (1 = user clicked, 0 = user ignored)*
 
+**Source:** [swekerr/click-through-rate-prediction](https://www.kaggle.com/datasets/swekerr/click-through-rate-prediction)
 ---
 
 ## ⚙️ Core Idea: Twin-Tower Neural Network
